@@ -1,0 +1,41 @@
+/*se hacen las reglas css, priero se pone el selector de
+1. tipo 1 etqieta - body
+2. selector de tipo # id
+3. Selector de clasee .clas
+*/
+
+body {
+    text-align: center;
+    margin:0px;
+    padding: 0px;
+    
+}
+
+#animalHeader {
+    height: 120px;
+    border-bottom: 3px solid gold;
+    width: 100%;
+    background: white;
+    border-top: 3px solid blueviolet;
+
+}
+
+#Logo {
+    width: 30%;
+    font-size: 30px;
+    float: left;
+}
+
+#Logo img {
+    display: block;
+    float: left;
+    height: 60px;
+
+}
+
+#Brand {
+    display: block;
+    margin: 0px;
+    float: left;
+}
+
