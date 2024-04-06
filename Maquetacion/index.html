@@ -5,64 +5,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquetacion Master Framework JS</title>
-        <!--Asociación de Hoja de estilos-->
+    <!--Asociación de Hoja de estilos-->
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <script type="text/javascript">
+
+        window.addEventListener("load", function () {
+
+
+            
+            var template = document.getElementById("article-template");
+            
+
+            var articles = document.getElementById("articles");
+            for (let index = 2; index <= 5; index++) {
+                var clonar = template.cloneNode(true);
+                clonar.removeAttribute("id");
+                var h2= clonar.getElementsByTagName("h2")[0];
+                h2.innerHTML = h2.textContent +  ' ' +  index;
+                articles.appendChild(clonar)
+            }
+
+
+        });
+
+    </script>
+
 
 </head>
 
 <body>
 
 
-    
-  
-    <header id = "animalHeader">
-        <div class="center">
-        <!-- Se crea un logo--->
-        <div id="Logo">
-            
-        <!--Span es una etiqueta generica-->
-        
-        
-        <img src="../assets/images/giphy.gif" class="appp logo" alt="Logotipo">
 
-     
-        <span id="Brand">
-            <strong>Master </strong> en framework
-        </span>
-        </div>
-        <!--Maquetado del Menu, nav es una etiqeueta son los links a otras paginas-->
-        <nav id="Menu">
-            <ul>
-                <li>
-                    <a href="#" target="_blank">Inicio</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">Blog</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">Formulario</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">Pagina 1</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">Pagina 2</a>
-                </li>
-            </ul>
+
+    <header id="animalHeader">
+        <div class="center">
+            <!-- Se crea un logo--->
+            <div id="Logo">
+
+                <!--Span es una etiqueta generica-->
+
+
+                <img src="../assets/images/giphy.gif" class="appp logo" alt="Logotipo">
+
+
+                <span id="Brand">
+                    <strong>Master </strong> en framework
+                </span>
+            </div>
+            <!--Maquetado del Menu, nav es una etiqeueta son los links a otras paginas-->
+            <nav id="Menu">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Formulario</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Pagina 1</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Pagina 2</a>
+                    </li>
+                </ul>
         </div>
         </nav>
         <!--limpiar flotados-->
         <div class="clearfix"></div>
 
     </header>
-    
+
     <div id="slider" class="lider-big">
         <h1>Bienvenido a Animalitos Web</h1>
         <a href="#" class="btn-white">Ir al Blog</a>
 
     </div>
-   
 
+    <div class="center">
+        <section id="content">
+            <h2>Ultimos Articulos de Perritos</h2>
+            <!--Listado Articulos-->
+
+            <div id="articles">
+
+
+                <article class="article-item" id="article-template">
+
+
+                    <div class="image-wrap">
+    
+                        <img src="../assets/images/perritos.jpg" alt="  Paisaje de perros">
+    
+                    </div>
+    
+                    <h2>Articulos de prueba</h2>
+    
+                    <span class="date">
+    
+                        Hace 5 minutos
+    
+                    </span>
+    
+                    <a href="#">Leer mas</a>
+    
+    
+                </article>
+
+                <!--    Añadir articulos via js -->    
+
+            </div>
+
+          
+
+        </section>
+
+
+
+        <aside id="sidebar">
+
+            <div id="nav-blog" class="sidebar-item">
+
+                <h3>Puedes Hacer estilos</h3>
+                <a href="#" target="_blank" class="botton-article">Crear Articulo</a>
+
+            </div>
+
+
+            <div id="search" class="sidebar-item">
+
+                <h3>Buscador</h3>
+                <h4>Encuentra el articulo que buscas</h4>
+
+
+                <form>
+                    <input type="text" name="search">
+                    <input type="submit" value="Buscar" class="botton-article">
+                    <br><br>
+                </form>
+
+
+
+            </div>
+
+        </aside>
+        <div class="clearfix"></div>
+
+
+    </div>
+
+    <footer id="footer">
+
+        <div class="center">
+
+            <p>
+
+                &COPY; PAGINA DE PERRITOS USANDO CSS Y HTML
+
+            </p>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
