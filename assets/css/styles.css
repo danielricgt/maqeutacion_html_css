@@ -95,11 +95,9 @@ body {
   color: white;
   text-shadow: 0px 0px 5px #444;
   background: rgb(63, 94, 251);
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(70, 252, 106, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(70, 252, 106, 1) 100%);
 }
 
 #slider h1 {
@@ -162,67 +160,183 @@ body {
 }
 
 .sidebar-item h3 {
-    text-transform: uppercase;
-    font-size: 17px;
-    margin: 0px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 3px solid violet ;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid violet;
 }
 
 
-.sidebar-item .botton-article{
-    margin-top: 10px;
-    margin: 0px auto;
+.sidebar-item .botton-article {
+  margin-top: 10px;
+  margin: 0px auto;
 }
 
 
 .botton-article {
-    display: block;
-    background: rgba(48, 139, 6, 0.534);
-    color: white;
-    padding: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-decoration: none;
-    max-width: 140px;
-    transition: 300ms all ;
-    border: none ;
-    cursor: pointer;
+  display: block;
+  background: rgba(48, 139, 6, 0.534);
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  max-width: 140px;
+  transition: 300ms all;
+  border: none;
+  cursor: pointer;
 
 }
+
 .botton-article:hover {
 
-    background-color: black;
+  background-color: black;
 
 }
 
-input[type="text"] {
-
-    width: 100%;
-    height: 30px;
-    border: 1px solid orange;
-    margin-bottom: 5px;
-    transition: 300ms all;
+.mid-form {
+  width: 50%;
+  margin: 0px auto;
 }
 
-input[type="text"]:focus {
-    box-shadow: 0px 0px 4px #ccc inset;
+.mid-form label{
+  display:block ;
+  float: leftS;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px ;
+  font-size: 17px;
 }
 
 
-#footer{
-    background-color: #f7f7f7;
-    width: 100%;
-    height: 70px;
-    line-height: 65px;
-    color: black;
+input[type="text"],
+textarea {
+
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid rgb(80, 77, 72);
+  margin-bottom: 5px;
+  transition: 300ms all;
+}
+
+input[type="text"]:focus, textarea:focus{
+  box-shadow: 0px 0px 4px #ccc inset;
+}
+
+
+
+textarea{
+
+  width: 100%;
+  height: 150px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+}
+
+.radiobuttons{
+
+
+  margin-top: 15px;
+  float: left;
+  margin-bottom:10px ;
+
+}
+
+
+#footer {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 70px;
+  line-height: 65px;
+  color: black;
 }
 
 #footer p {
-    margin: 0px;
-    padding: 0px;
-    
+  margin: 0px;
+  padding: 0px;
+
 }
 
+.article-item {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: left;
+
+}
+
+.article-item .image-wrap {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  float: left;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+}
+
+.article-item .image-wrap img {
+
+  height: 100%;
+  text-align: center;
+
+}
+
+.article-item h2 {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 7px;
+
+}
+
+
+.article-item .date {
+  display: block;
+  width: 100%;
+  color: #e47373;
+
+
+}
+
+.article-item a {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.article-item a:hover {
+  text-decoration: underline;
+}
+
+.sub-header {
+  font-size: 38px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+
+}
+
+.article-item-detail .image-wrap {
+  float: none;
+  width: 100%;
+  height: 300px;
+}
+
+.article-item-detail .image-wrap img{
+
+  height: 100%;
+  width: auto;
+}
+
+.article-item-detail .sub-header {
+  margin-bottom: 0px;
+  border: none;
+  margin-top: 5px;
+}

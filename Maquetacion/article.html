@@ -7,28 +7,7 @@
     <title>Maquetacion Master Framework JS</title>
     <!--Asociación de Hoja de estilos-->
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-    <script type="text/javascript">
 
-        window.addEventListener("load", function () {
-
-
-            
-            var template = document.getElementById("article-template");
-            
-
-            var articles = document.getElementById("articles");
-            for (let index = 2; index <= 5; index++) {
-                var clonar = template.cloneNode(true);
-                clonar.removeAttribute("id");
-                var h2= clonar.getElementsByTagName("h2")[0];
-                h2.innerHTML = h2.textContent +  ' ' +  index;
-                articles.appendChild(clonar)
-            }
-
-
-        });
-
-    </script>
 
 
 </head>
@@ -79,47 +58,63 @@
 
     </header>
 
-    <div id="slider" class="lider-big">
-        <h1>Bienvenido a Animalitos Web</h1>
-        <a href="#" class="btn-white">Ir al Blog</a>
 
-    </div>
 
     <div class="center">
-        <section id="content" >
-            <h2 class="sub-header">Ultimos Articulos de Perritos</h2>
-            <!--Listado Articulos-->
-
-            <div id="articles">
+        <section id="content">
 
 
-                <article class="article-item" id="article-template">
+            <h1 class="sub-header">Articulos de prueba</h1>
+            <article class="article-item-detail" >
 
 
-                    <div class="image-wrap">
-    
-                        <img src="../assets/images/perritos.jpg" alt="  Paisaje de perros">
-    
-                    </div>
-    
-                    <h2>Articulos de prueba</h2>
-    
-                    <span class="date">
-    
-                        Hace 5 minutos
-    
-                    </span>
-    
-                    <a href="#">Leer mas</a>
-    
-    
-                </article>
+                <div class="image-wrap">
 
-                <!--    Añadir articulos via js -->    
+                    <img src="../assets/images/perritos.jpg" alt="  Paisaje de perros">
 
-            </div>
+                </div>
 
-          
+               
+
+                <span class="date">
+
+                    Hace 5 minutos
+
+                </span>
+
+                <p>
+
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat ipsam amet eum
+                    consectetur
+                    sapiente excepturi blanditiis modi. Quam voluptatum similique ipsa vel! Veritatis minus laudantium
+                    amet quos incidunt expedita?
+
+                </p>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam inventore ipsam ipsa? Nulla laboriosam
+                numquam assumenda corrupti corporis dignissimos earum iure ipsam tempore ab. Nisi et fuga dolorem
+                doloremque deserunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias expedita illo, similique illum,
+                possimus sapiente consectetur eveniet ipsam, quod quo error aspernatur! Obcaecati nostrum laboriosam
+                quae enim, quos fugiat voluptatem.
+                <p>
+
+
+                </p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus et sunt ratione. Ex eum
+                expedita nobis odio ipsam cum, natus corrupti maiores modi numquam, magni libero omnis est dolor
+                nesciunt.
+                <p>
+
+                </p>
+
+
+            </article>
+
+
+
+
+
 
         </section>
 
