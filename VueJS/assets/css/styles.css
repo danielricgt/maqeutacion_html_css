@@ -94,10 +94,8 @@ body {
   height: 350px;
   color: white;
   text-shadow: 0px 0px 5px #444;
-  background: rgb(63, 94, 251);
-  background: radial-gradient(circle,
-      rgba(63, 94, 251, 1) 0%,
-      rgba(70, 252, 106, 1) 100%);
+  background: rgb(187,251,63);
+  background: radial-gradient(circle, rgba(187,251,63,0.9836309523809523) 0%, rgba(8,13,1,1) 53%);
 }
 
 #slider h1 {
@@ -121,7 +119,7 @@ body {
   text-decoration: none;
   line-height: 35px;
   box-shadow: 0px 0px 5px #444;
-  margin-top: 40px;
+  margin-top: 20px;
   border-radius: 4px;
 }
 
@@ -131,7 +129,7 @@ body {
 }
 
 #slider.slider-small {
-  height: 150px;
+  height: 200px;
 }
 
 #slider.slider-small h1 {
